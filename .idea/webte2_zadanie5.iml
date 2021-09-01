@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/react/socket" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/react/dns" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/react/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/react/stream" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/react/promise-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/react/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/cboden/ratchet" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/react/event-loop" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/ratchet/rfc6455" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/evenement/evenement" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/phpsockets/vendor/symfony/routing" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+  </component>
+</module>

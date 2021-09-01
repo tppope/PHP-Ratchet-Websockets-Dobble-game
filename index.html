@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dobble!</title>
+    <link rel="icon" href="resources/pictures/dobble.png" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+</head>
+<body>
+<div id="waiting-screen">
+    <span id="waiting-text">Čakaj na ďalších hráčov</span>
+    <button id="exit" style="display: none" type="button" class="btn btn-outline-danger" onclick="deletePlayerCount()">Zrušiť</button>
+    <lottie-player style="display: none" id="countdown" src="resources/lottie/lf30_editor_wyjmlvqj.json"  background="transparent"  speed="1" style="width: 200px; height: 200px;"></lottie-player>
+</div>
+<header id="main-header">
+    <img src="resources/pictures/title.png" width="210"  height="79" alt="title">
+    <div id="correct-picture">
+    </div>
+
+</header>
+<section id="playground-login">
+    <div id="left-card-login" class="card">
+
+    </div>
+    <div class="cardCountStyle">56</div>
+    <div id="right-card-login-picture" class="card">
+        <div id="already-start-info">Práve už prebieha iná hra.<br>Skúste to o chvíľu znova.</div>
+        <div id="login-form">
+            <form id="game-form" onsubmit="return false;">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nickname">Zadaj prezývku</label>
+                        <input type="text" class="form-control" id="nickname" placeholder="dobble_master" required maxlength="20">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <label for="player-count">Počet hráčov</label>
+                        <input type="number" class="form-control" id="player-count" value="2" min="2" max="8">
+                        <div class="invalid-tooltip">
+                            Počet hráčov bol zadaný iným hráčom
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row" id="start-button">
+                    <div class="form-group" >
+                        <button type="submit" class="btn btn-outline-success" onclick="startGame()">Štart</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="playground">
+    <div id="left-card" class="card">
+
+    </div>
+    <div class="middle-playground">
+        <div id="cardCount" class="cardCountStyle">
+
+        </div>
+        <button id="refresh" style="display: none" onclick="window.location.replace('index.html')" type="button" class="btn btn-outline-info">Hrať znova</button>
+    </div>
+    <div id="right-card" class="card">
+
+    </div>
+</section>
+
+</body>
+</html>

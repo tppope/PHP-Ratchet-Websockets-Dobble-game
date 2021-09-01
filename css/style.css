@@ -1,0 +1,237 @@
+/*commented code for future feater*/
+html, body{
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+.card{
+    width: 35vw;
+    height: 35vw;
+    border:black solid 3px;
+    border-radius: 50vw;
+    background-color: white;
+    position: relative;
+    box-shadow: black 3px 3px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#already-start-info{
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251,220,75);
+    opacity: 0;
+    z-index: 40;
+    transition: opacity 300ms;
+    border-radius: 50vw;
+}
+#playground {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    overflow: hidden;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+    /*position: relative;*/
+}
+#left-card-login{
+    background-image: url("../resources/pictures/dobble-card.png");
+    background-size: cover;
+}
+#login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#waiting-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    z-index: 50;
+}
+.set-blur{
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+}
+#start-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#playground-login{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    /*position: relative;*/
+}
+.card img{
+    cursor: pointer;
+    position: absolute;
+}
+.cardCountStyle{
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    /*z-index: 10;*/
+}
+.middle-playground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*#left-card-case{*/
+/*    left: 5vw;*/
+/*}*/
+/*#right-card-case{*/
+/*    left: 60vw;*/
+
+/*}*/
+#correct-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -300px;
+    transition: right 500ms ease-out;
+}
+.form-group{
+    position: relative;
+}
+.invalid-tooltip{
+    font-size: 9px;
+    width: auto;
+}
+form button{
+    margin-top: 30px;
+}
+/*.card-case{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    transition: all 300ms linear;*/
+/*}*/
+@media (max-width: 768px) {
+    #playground{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #playground-login{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .card{
+        width: 50vw;
+        height: 50vw;
+    }
+    #game-form{
+        width: 70%;
+    }
+    #waiting-screen {
+        font-size: 30px;
+        margin-top: 175px;
+    }
+}
+@media (max-width: 414px) {
+    label{
+        font-size: 12px !important;
+    }
+    table{
+        font-size: 10px;
+    }
+    .invalid-tooltip{
+        font-size: 7px;
+    }
+    .card{
+        width: 70vw;
+        height: 70vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #game-form{
+        width: 50%;
+    }
+    label{
+        font-size: 4vw;
+    }
+    .form-group{
+        margin-bottom: 0px;
+    }
+    form button{
+        margin-top: 10px;
+    }
+    #score-table{
+        width: 60%;
+        height: 60%;
+    }
+    #already-start-info {
+        font-size: 15px;
+    }
+    #waiting-screen {
+        font-size: 25px;
+    }
+    form button{
+        margin-top: 30px;
+    }
+    .cardCountStyle{
+        font-size: 30px;
+    }
+    #playground-login{
+        margin-top: 10px;
+    }
+    #playground{
+        margin-top: 10px;
+    }
+}
